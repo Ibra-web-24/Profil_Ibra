@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pribadi Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Muhtar Ibrahim Ilham</h1>
+            <p>Programmer | Web Developer | Mechanic</p>
+            <a href="#projects" class="cta">Lihat Proyek</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <img src="foto ibra.jpg" alt="Foto Profil" class="profile-pic">
+                <p>Saya seorang programmer dengan pengalaman di pengembangan web. Saya menyukai tantangan dan selalu ingin belajar lebih banyak,Selain itu saya juga hobi di bidang TKR seperti sepeda motor,Saya juga mempunyai proyek di hobi saya tersebut</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Proyek Saya</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Proyek membangun astrea grand 125 cc</h3>
+                    <p>Foto dan deskripsinya ada disini.<a href="proyek1.html">Lihat</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>Penampakan astrea grand 125 cc</h3>
+                    <p>Ini adalah astrea grand yang menemani saya dari 2018 sampai sekarang.<a href="proyek2.html">Lihat</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak Saya</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nama Anda. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ffd700;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: #e6c300;
+}
+
+section {
+    padding: 30px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #6a11cb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #5a0bb0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+}
+/* Container untuk setiap proyek */
+.project-card {
+    border: 1px solid #ddd; /* Border untuk proyek */
+    border-radius: 8px; /* Sudut yang membulat */
+    overflow: hidden; /* Menghindari konten melampaui border */
+    margin: 20px; /* Jarak antar proyek */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+    transition: transform 0.2s; /* Animasi saat hover */
+}
+
+/* Efek saat hover */
+.project-card:hover {
+    transform: translateY(-5px); /* Angkat sedikit */
+}
+
+/* Gambar dalam proyek */
+.project-image {
+    width: 100%; /* Membuat gambar responsif */
+    max-width: 300px; /* Ukuran maksimum gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Memastikan gambar ditampilkan sebagai blok */
+    margin: 0 auto; /* Memusatkan gambar */
+}
+
+
+/* Gaya untuk deskripsi proyek */
+.project-card p {
+    padding: 15px; /* Jarak dalam deskripsi */
+    font-size: 16px; /* Ukuran font */
+    color: #555; /* Warna teks */
+}
+
+/* Link di dalam proyek */
+.project-card a {
+    display: inline-block; /* Membuat tautan sebagai blok */
+    padding: 10px 15px; /* Jarak dalam tautan */
+    margin: 15px; /* Jarak antar elemen */
+    background-color: #007BFF; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut yang membulat */
+    transition: background-color 0.3s; /* Animasi saat hover */
+}
+
+/* Efek saat hover pada tautan */
+.project-card a:hover {
+    background-color: #0056b3; /* Warna saat hover */
+}
+
+/* Gaya untuk kontainer proyek */
+.project-grid {
+    display: flex; /* Menggunakan flexbox */
+    flex-wrap: wrap; /* Mengizinkan baris baru */
+    justify-content: space-around; /* Menyebarkan proyek secara merata */
+}
+
+/* Kontainer untuk setiap proyek */
+.container {
+    max-width: 1200px; /* Lebar maksimum */
+    margin: 0 auto; /* Memusatkan kontainer */
+    padding: 20px; /* Jarak dalam kontainer */
+}
